@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <img class="logo"
+          class="imagen"
+          src="http://citropaz.com.ar/img/main-logo.svg"
+          alt="Logo Citropaz"/>
+      <ul>
+        <li><a href="./index.html">Crear Garantias</a></li>
+        <li><a href="./garantias.html">Ver Garantias</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="arriba">
+        <div class="titulos">
+          <div class="titulos-container">
+            <h1>Garantias</h1>
+            <h2 class="h2sub">Añadir garantias</h2>
+          </div>
+        </div>
+      </div>
+      <div class="divform">
+        <form id="crearGarantia" class="formulario">
+          <input type="date" name="fecha" placeholder="Ingrese fecha de compra" required>
+          <input type="text" name="nombre" placeholder="Ingrese nombre y apellido del cliente" required>
+          <input type="text" name="marca" placeholder="Ingrese marca de la bateria" required>
+          <input type="text" name="modelo" placeholder="Ingrese modelo de la bateria" required>
+          <input type="text" name="patente" placeholder="Ingrese patente de la bateria" required>
+          <input type="text" name="vehiculo" placeholder="Ingrese marca y modelo del vehiculo" required>
+          <input type="text" name="comentario" placeholder="Ingrese algun comentario" required>
+          <button class="btn" type="submit">Crear Garantia</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="./agregarGaran.js"></script>
+  </body>
+</html>
